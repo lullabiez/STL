@@ -13,7 +13,7 @@ else
 echo -e "version anda tidak terdeteksi!"
 exit
 fi
-wget --no-check-certificate "https://raw.githubusercontent.com/lullabiez/STL/main/install.sh" -O /usr/bin/stl
+wget --no-check-certificate "https://raw.githubusercontent.com/lullabiez/STL/main/stl.sh" -O /usr/bin/stl
 wget --no-check-certificate "https://raw.githubusercontent.com/lullabiez/STL/main/gproxy.sh" -O /usr/bin/gproxy
 wget --no-check-certificate "https://raw.githubusercontent.com/lullabiez/STL/main/autorekonek-stl.sh" -O /usr/bin/autorekonek-stl
 opkg install openvpn && opkg install ip-full && opkg install openssh-client && opkg install stunnel && opkg install *.ipk && opkg install lsof && opkg install fping && opkg install screen
