@@ -1,7 +1,7 @@
 #!/bin/sh
 #stl (Wegare)
 clear
-#udp2="$(cat /root/akun/stl.txt | grep -i udp | cut -d= -f2)" 
+udp2="$(cat /root/akun/stl.txt | grep -i udp | cut -d= -f2)" 
 user2="$(cat /root/akun/stl.txt | grep -i user | cut -d= -f2)" 
 host2="$(cat /root/akun/stl.txt | grep -i host | cut -d= -f2 | head -n1)"
 port2="$(cat /root/akun/stl.txt | grep -i port | cut -d= -f2 | head -n1)" 
@@ -41,9 +41,9 @@ echo "Masukkan pass"
 read -p "default pass: $pass2 : " pass
 [ -z "${pass}" ] && pass="$pass2"
 
-#echo "Masukkan port udpgw" 
-#read -p "default udpgw: $udp2 : " udp
-##[ -z "${udp}" ] && udp="$udp2"
+echo "Masukkan port udpgw" 
+read -p "default udpgw: $udp2 : " udp
+[ -z "${udp}" ] && udp="$udp2"
 
 if [ "$met" = "http" ]; then
 echo "Masukkan payload" 
